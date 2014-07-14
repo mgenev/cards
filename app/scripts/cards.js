@@ -19,12 +19,12 @@ $('.draw').click(function () {
 	if (player === 1) {
 		player1.getCard(stack1);		
 		$('.player1 .hand').append(player1.hand[player1.hand.length-1].createDomNode());
-		showCardCount();
+		
 	} else if (player === 2) {
 		player2.getCard(stack1);
-		$('.player2 .hand').append(player2.hand[player2.hand.length-1].createDomNode());
-		showCardCount();
+		$('.player2 .hand').append(player2.hand[player2.hand.length-1].createDomNode());	
 	}
-		
+
+	showCardCount();		
 	$('.deck .hand').append(stack1.cards[0].createDomNode());
 });
